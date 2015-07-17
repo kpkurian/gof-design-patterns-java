@@ -11,9 +11,10 @@ public class GofFactoryMethodTest {
 		//Application declares the factory method (createDocument)
 		Application wordProcessor, spreadSheet;
 		
-		//Defines the interface of objects the factory method creates
+		//Document (Product) defines the interface of objects the factory method creates
 		Document page, calcSheet;
 		
+		//Application defers product creation to sub class
 		wordProcessor = new WordProcessor();
 		page = wordProcessor.createDocument();
 		
